@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{'/css/output.css'}" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-300">
+    <h1>Home</h1>
+    <p class="text-3xl font-bold underline text-cyan-300">
+      This is the home page
+    </p>
+    <p data-th-text="${name}"></p>
+    <p>this site belongs to <span data-th-text="${name}"></span></p>
+    <p>Github Link <a target="_blank" th:href="${github}">click here</a></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
